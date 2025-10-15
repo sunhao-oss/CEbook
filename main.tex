@@ -1,0 +1,254 @@
+% Refined bilingual edition of Sunzi's Art of War
+\documentclass[12pt]{book}
+
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{hyperref}
+
+\geometry{a4paper,margin=2.5cm}
+\setstretch{1.25}
+\setlength{\parskip}{0.75em}
+\setlength{\parindent}{0pt}
+
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+\setmonofont{Menlo}
+\setCJKmainfont{Songti SC}
+\setCJKsansfont{Heiti SC}
+\setCJKmonofont{STFangsong}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  pdftitle={孫子兵法},
+  pdfauthor={},
+  pdfsubject={Sunzi's Art of War bilingual edition},
+  pdfcreator={XeLaTeX}
+}
+
+\newcommand{\chapterentry}[4]{%
+  \chapter[\texorpdfstring{#1}{#1}]{\texorpdfstring{#1\\\Large\textit{#2}}{#1 — #2}}%
+  \noindent\textbf{原文}\par
+  #3
+
+  \bigskip
+  \noindent\textbf{Translation}\par
+  #4
+}
+
+\title{{\sffamily 孫子兵法}\\[1ex]\large Sunzi's Art of War}
+\author{}
+\date{}
+
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+\mainmatter
+
+\chapterentry{第1篇 始計}{Laying Plans}{%
+孫子曰：兵者，國之大事，死生之地，存亡之道，不可不察也。
+
+故經之以五事，校之以計，而索其情：一曰道，二曰天，三曰地，四曰將，五曰法。
+
+道者，令民與上同意，可與之死，可與之生，而不畏危也；天者，陰陽、寒暑、時制也；地者，遠近、險易、廣狹、死生也；將者，智、信、仁、勇、嚴也；法者，曲制、官道、主用也。凡此五者，將莫不聞，知之者勝，不知者不勝。
+
+故校之以計，而索其情，曰：主孰有道？將孰有能？天地孰得？法令孰行？兵眾孰強？士卒孰練？賞罰孰明？吾以此知勝負矣。
+
+將聽吾計，用之必勝，留之；將不聽吾計，用之必敗，去之。
+
+計利以聽，乃為之勢，以佐其外。勢者，因利而制權也。
+
+兵者，詭道也。故能而示之不能，用而示之不用，近而示之遠，遠而示之近。利而誘之，亂而取之，實而備之，強而避之，怒而撓之，卑而驕之，佚而勞之，親而離之，攻其無備，出其不意。此兵家之勝，不可先傳也。
+
+夫未戰而廟算勝者，得算多也；未戰而廟算不勝者，得算少也。多算勝，少算不勝，而況無算乎！吾以此觀之，勝負見矣。}{%
+Sunzi said: War is the gravest affair of state, the ground of life and death, the path of survival or extinction—it must be examined with utmost care.
+
+Assess it through five constant factors and measure the situation by calculation: the Way, Heaven, Earth, the commander and method.
+
+The Way brings the people into unity with their ruler so that they will follow him through death. Heaven encompasses yin and yang, cold and heat and the cycle of seasons. Earth covers distance and difficulty, openness and confinement, chances of life or death. The commander embodies wisdom, integrity, humaneness, courage and discipline. Method regulates organization, command structures, logistics and expenditure. Every general must hear of these; those who grasp them prevail, those who neglect them fail.
+
+Compare both sides by asking: Which ruler possesses the Way? Which commander is more capable? Who holds advantage of Heaven and Earth? Whose laws and orders are enforced? Whose forces are stronger? Whose officers and soldiers are better trained? Whose rewards and punishments are clear? From these calculations the outcome becomes evident.
+
+If a general heeds my estimates, employ him and he will surely win; if he rejects them, dismiss him lest he bring defeat. When advantage emerges, convert it into momentum, for momentum is the power derived from advantage.
+
+War is the art of deception. Display capability as incapability; activity as inactivity; proximity as distance; distance as proximity. Offer profit to lure him, sow disorder to seize him, prepare against the solid, avoid the strong, provoke the temperate, humble the arrogant, tire the rested, divide the close, strike where he is unprepared and appear where he does not expect you. Such victories cannot be announced in advance.
+
+Those who calculate many advantages at the temple before battle win; those with few advantages lose; how much worse are those with none? By this method victory and defeat can be foreseen.}
+
+\chapterentry{第2篇 作戰}{Waging War}{%
+孫子曰：凡用兵之法，馳車千駟，革車千乘，帶甲十萬，千里饋糧。則內外之費，賓客之用，膠漆之材，車甲之奉，日費千金，然後十萬之師舉矣。
+
+其用戰也，貴勝，久則鈍兵挫銳，攻城則力屈，久暴師則國用不足。夫鈍兵挫銳，屈力殫貨，則諸侯乘其弊而起，雖有智者，不能善其後矣。故兵聞拙速，未睹巧之久也。夫兵久而國利者，未之有也。故不盡知用兵之害者，則不能盡知用兵之利也。
+
+善用兵者，役不再籍，糧不三載，取用於國，因糧於敵，故軍食可足也。國之貧於師者遠輸，遠輸則百姓貧；近於師者貴賣，貴賣則百姓竭，財竭則急於丘役。力屈財殫，中原內虛於家，百姓之費，十去其七；公家之費，破軍罷馬，甲胄矢弩，戟楯矛櫓，丘牛大車，十去其六。
+
+故智將務食於敵，食敵一鍾，當吾二十鍾；萁稈一石，當吾二十石。故殺敵者，怒也；取敵之利者，貨也。故車戰，得車十乘以上，賞其先得者，而更其旌旗。車雜而乘之，卒善而養之，是謂勝敵而益強。
+
+故兵貴勝，不貴久。故知兵之將，民之司命。國家安危之主也。}{%
+Raising an army demands enormous wealth: a thousand light chariots, a thousand heavy chariots, one hundred thousand armored troops and supply lines stretching a thousand li. Maintaining such a host consumes a thousand pieces of gold each day on transport, guests, materials and equipment before the army can even march.
+
+Therefore value swift victory. A prolonged campaign dulls weapons and breaks morale; besieging cities exhausts strength; keeping armies in the field drains the treasury. When strength is spent and wealth depleted, neighboring lords seize your weakness and even the wisest cannot stave off ruin. We have heard of clumsy quick victories, never of clever protracted ones. No state has ever profited from a long war. Those who do not fully understand war’s harm cannot comprehend its benefit.
+
+The expert commander does not conscript twice nor haul provisions thrice. He draws resources from home but feeds on the enemy so his army remains supplied. A state grows poor when carting supplies over distance; the people near the army suffer inflated prices; when wealth is exhausted, desperate levies follow. Strength ebbs, wealth vanishes, households are emptied. Seven-tenths of the people’s wealth and six-tenths of the state’s resources disappear into broken chariots, killed horses, armor, bows, spears, shields, oxen and carts.
+
+Therefore the wise general lives off the enemy: one bushel seized equals twenty from home; one measure of forage equals twenty of our own. Killing the enemy is driven by anger; seizing their goods by reward. When more than ten chariots are captured, reward the first captor, change the flags, mingle the chariots with your own and treat captured soldiers kindly. Thus defeating the enemy makes you stronger.
+
+Hence victory is precious, not duration. The general who understands war is steward of the people’s fate and guardian of the state’s safety.}
+
+\chapterentry{第3篇 謀攻}{Strategic Attack}{%
+孫子曰：凡用兵之法，全國為上，破國次之；全軍為上，破軍次之；全旅為上，破旅次之；全卒為上，破卒次之；全伍為上，破伍次之。是故百戰百勝，非善之善者也；不戰而屈人之兵，善之善者也。
+
+故上兵伐謀，其次伐交，其次伐兵，其下攻城。攻城之法，為不得已。修櫓轒轀，具器械，三月而後成；距闉，又三月而後已。將不勝其忿，而蟻附之，殺士三分之一，而城不拔者，此攻之災也。
+
+故善用兵者，屈人之兵，而非戰也，拔人之城而非攻也，毀人之國而非久也，必以全爭於天下，故兵不頓而利可全，此謀攻之法也。
+
+故用兵之法，十則圍之，五則攻之，倍則分之，敵則能戰之，少則能逃之，不若則能避之。故小敵之堅，大敵之擒也。
+
+夫將者，國之輔也。輔周則國必強，輔隙則國必弱。故君之所以患於軍者三：不知軍之不可以進而謂之進，不知軍之不可以退而謂之退，是謂縻軍；不知三軍之事，而同三軍之政，則軍士惑矣；不知三軍之權，而同三軍之任，則軍士疑矣。三軍既惑且疑，則諸侯之難至矣。是謂亂軍引勝。
+
+故知勝有五：知可以戰與不可以戰者，勝。識眾寡之用者，勝。上下同欲者，勝。以虞待不虞者，勝。將能而君不御者，勝。此五者，知勝之道也。
+
+故曰：知己知彼，百戰不貽；不知彼而知己，一勝一負；不知彼不知己，每戰必敗。}{%
+The foremost objective in war is to seize the enemy state intact; to destroy it is second best. Capture an army whole rather than shatter it, a brigade rather than break it, a battalion rather than scatter it, a company rather than annihilate it. Winning every battle is not supreme excellence; subduing the enemy without fighting is the highest skill.
+
+Thus attack plans first; next attack alliances; next attack armies; last of all attack walled cities, and only from necessity. Preparing siege engines such as towers and rams takes months, as does filling the trenches. If generals cannot restrain their anger and swarm the walls like ants, a third of the soldiers will die and the city still stand—this is the disaster of siege warfare.
+
+Skilled commanders subdue armies without battle, capture cities without assault and topple states rapidly so that their troops remain fresh and their gains intact. That is the method of strategic attack.
+
+In the conduct of war: if ten times stronger, surround; if five times, attack; if double, divide; if equal, engage; if fewer, evade; if much fewer, avoid. The obstinacy of a small force invites capture by a larger.
+
+The general is the support of the state: if his support is sound the state is strong; if flawed the state is weak. Rulers bring calamity in three ways: ordering advance when the army cannot advance, or retreat when it cannot retreat, thereby hamstringing it; interfering in administration while ignorant of its workings, thereby confusing the soldiers; sharing command responsibilities while ignorant of military weight, thereby sowing doubt. When the ranks are confused and doubtful, neighboring lords exploit the chaos and the army slides toward defeat.
+
+Victory rests on five factors: knowing when to fight and when not; understanding how to handle both superior and inferior forces; maintaining unity of purpose from top to bottom; preparing for the unexpected; and employing a capable general free from interference. Therefore, know the enemy and know yourself, and you will never be endangered in a hundred battles. Know yourself but not the enemy, and you will win one and lose one. Know neither, and you are doomed in every fight.}
+
+\chapterentry{第4篇 軍形}{Disposition of Forces}{%
+孫子曰：昔之善戰者，先為不可勝，以待敵之可勝。不可勝在己，可勝在敵。故善戰者，能為不可勝，不能使敵必可勝。故曰：勝可知，而不可為。
+
+不可勝者，守也；可勝者，攻也。守則不足，攻則有餘。善守者，藏於九地之下，善攻者，動於九天之上，故能自保而全勝也。
+
+見勝不過眾人之所知，非善之善者也；戰勝而天下曰善，非善之善者也。故舉秋毫不為多力，見日月不為明目，聞雷霆不為聰耳。古之善戰者，勝於易勝者也。故善戰者之勝也，無智名，無勇功，故其戰勝不忒。不忒者，其所措必勝，勝已敗者也。故善戰者，先立於不敗之地，而不失敵之敗也。是故勝兵先勝，而後求戰，敗兵先戰而後求勝。善用兵者，修道而保法，故能為勝敗之政。
+
+兵法：一曰度，二曰量，三曰數，四曰稱，五曰勝。地生度，度生量，量生數，數生稱，稱生勝。故勝兵若以鎰稱銖，敗兵若以銖稱鎰。勝者之戰，若決積水於千仞之谿者，形也。}{%
+Ancient masters first made themselves invincible and then awaited the enemy’s vulnerability. Invincibility lies within oneself; opportunity lies with the enemy. Victory can be foreseen but not forged at will.
+
+Invincibility rests on defense; the opportunity for victory rests on attack. Defense stems from insufficiency; attack from surplus. The finest defenders hide beneath the depths of the earth; the finest attackers move above the heights of heaven. Thus they protect themselves while securing complete victory.
+
+Seeing victory only when it is obvious to all is not true excellence; winning battles that everyone praises is not supreme. Lifting a feather does not prove strength, seeing the sun and moon does not prove keen sight and hearing thunder does not prove sharp hearing. The ancients excelled because they triumphed where victory was easiest. Their victories bore no acclaim for wisdom or valor, yet they never erred: they placed themselves beyond defeat and never let slip the enemy’s ruin. Victorious armies win first and then fight; defeated armies fight first and then seek victory. Skilled commanders cultivate the Way and uphold regulations, thereby governing success and failure.
+
+Military calculation proceeds from measurement, to estimation, to calculation, to weighing, to victory. Terrain gives measurement; measurement gives estimation; estimation yields calculation; calculation produces weighing; weighing secures victory. Victorious troops weigh a weight against a grain; defeated troops weigh a grain against a weight. When the strong act, their battle is like releasing a pent-up torrent down a thousand-fathom ravine.}
+
+\chapterentry{第5篇 兵勢}{Momentum}{%
+孫子曰：凡治眾如治寡，分數是也；鬥眾如鬥寡，形名是也；三軍之眾，可使必受敵而無敗者，奇正是也；兵之所加，如以碫投卵者，虛實是也。
+
+凡戰者，以正合，以奇勝。故善出奇者，無窮如天地，不竭如江海。終而復始，日月是也；死而復生，四時是也。聲不過五，五聲之變，不可勝聽也；色不過五，五色之變，不可勝觀也；味不過五，五味之變，不可勝嘗也；戰勢不過奇正，奇正之變，不可勝窮也。奇正相生，如循環之無端，孰能窮之哉？
+
+激水之疾，至於漂石者，勢也；鷙鳥之疾，至於毀折者，節也。是故善戰者，其勢險，其節短。勢如張弩，節如發機。
+
+紛紛紜紜，鬥亂而不可亂也；渾渾沌沌，形圓而不可敗也。亂生於治，怯生於勇，弱生於強。治亂，數也；勇怯，勢也；強弱，形也。故善動敵者，形之，敵必從之；予之，敵必取之。以利動之，以卒待之。
+
+故善戰者，求之於勢，不責於人；故能擇人而任勢。任勢者，其戰人也，如轉木石。木石之性，安則靜，危則動，方則止，圓則行。故善戰人之勢，如轉圓石於千仞之山者，勢也。}{%
+Commanding many troops is like commanding few: it is a matter of organization. Fighting many foes is like fighting few: it depends on formation and signals. Armies can be made to stand firm by blending orthodox and unorthodox tactics, striking so that your force is like hurling a boulder at an egg by hitting emptiness with substance.
+
+Engage with orthodox maneuvers and seize victory with surprises. The varieties of surprise are as endless as heaven and earth, as inexhaustible as rivers and seas: like sun and moon that end and begin, like the seasons that die and are reborn. Sound has only five notes yet yields endless harmonies; color only five hues yet endless shades; taste only five flavors yet endless savors. Battle offers only the orthodox and the unorthodox, yet their permutations are without limit. Each gives rise to the other in endless cycles.
+
+Torrent water that sweeps away boulders demonstrates momentum; the falcon’s sudden stoop that snaps its prey shows timing. Therefore the expert stores perilous momentum and unleashes brief, decisive moments: momentum like a drawn crossbow, timing like releasing the trigger.
+
+He appears amid turmoil yet remains unconfused; he seems shapeless yet cannot be defeated. Disorder arises from order, fear from courage, weakness from strength. Order and disorder depend on organization; courage and fear on momentum; strength and weakness on formation. He shapes the enemy and they must conform; he offers advantage and they must accept; he lures with profit and strikes with prepared troops.
+
+Thus the skilled commander seeks victory through momentum, not by demanding heroics. He selects his people and harnesses the configuration of force. Like rolling logs or stones: when stationary they rest; on slopes they move; square they halt; round they roll. Such is the momentum of troops launched down a thousand-fathom slope.}
+
+\chapterentry{第6篇 虛實}{Weakness and Strength}{%
+孫子曰：凡先處戰地而待敵者佚，後處戰地而趨戰者勞。
+
+故善戰者，致人而不致於人。能使敵人自至者，利之也；能使敵人不得至者，害之也。故敵佚能勞之，飽能饑之，安能動之。出其所必趨，趨其所不意。行千里而不勞者，行於無人之地也；攻而必取者，攻其所不守也；守而必固者，守其所不攻也。
+
+故善攻者，敵不知其所守；善守者，敵不知其所攻。微乎微乎，至於無形；神乎神乎，至於無聲，故能為敵之司命。進而不可禦者，沖其虛也；退而不可追者，速而不可及也。故我欲戰，敵雖高壘深溝，不得不與我戰者，攻其所必救也；我不欲戰，雖畫地而守之，敵不得與我戰者，乖其所之也。故形人而我無形，則我專而敵分。我專為一，敵分為十，是以十攻其一也。則我眾敵寡，能以眾擊寡者，則吾之所與戰者約矣。吾所與戰之地不可知，不可知則敵所備者多，敵所備者多，則吾所與戰者寡矣。故備前則後寡，備後則前寡，備左則右寡，備右則左寡，無所不備，則無所不寡。寡者，備人者也；眾者，使人備己者也。故知戰之地，知戰之日，則可千里而會戰；不知戰之地，不知戰日，則左不能救右，右不能救左，前不能救後，後不能救前，而況遠者數十裏，近者數裏乎！以吾度之，越人之兵雖多，亦奚益於勝哉！故曰：勝可為也。敵雖眾，可使無鬥。故策之而知得失之計，候之而知動靜之理，形之而知死生之地，角之而知有餘不足之處。故形兵之極，至於無形。無形則深間不能窺，智者不能謀。因形而措勝於眾，眾不能知。人皆知我所以勝之形，而莫知吾所以制勝之形。故其戰勝不復，而應形於無窮。夫兵形象水，水之行避高而趨下，兵之形避實而擊虛；水因地而制流，兵因敵而制勝。故兵無常勢，水無常形。能因敵變化而取勝者，謂之神。故五行無常勝，四時無常位，日有短長，月有死生。}{%
+Those who occupy the field first and wait for the enemy are at ease; those who arrive late and rush into battle are fatigued.
+
+Therefore the adept commander compels others to approach him and does not allow himself to be compelled. He lures them when he wishes them near and obstructs them when he wishes them distant. He wears out the rested, starves the full and stirs the settled. He appears where he must be met and strikes where he is unexpected. A march of a thousand li without fatigue is possible by traveling through unpeopled terrain; inevitable success in attack comes from striking unguarded points; secure defense comes from holding what the enemy cannot attack.
+
+The master of attack leaves the enemy unsure where to defend; the master of defense leaves the enemy unsure where to strike. His form is subtle, his presence silent; he becomes arbiter of the enemy’s fate. He advances irresistibly by plunging into emptiness; he withdraws untouchably by swift departure. If he wishes to fight, even an enemy on high ramparts must descend because he strikes what they must rescue. If he does not wish to fight, he refuses battle even if he simply draws a line on the ground, because he confuses their route. By giving the enemy form while remaining formless himself, he concentrates his own strength and forces the enemy to divide. When we are one and the enemy ten, we attack ten with one; thus we are many and they few. When the battlefield is unknown, the enemy must guard everywhere; guarding everywhere makes them weak everywhere.
+
+If they guard the front, the rear is thin; guard the rear, the front is thin; guard the left, the right is thin; guard the right, the left is thin. Guard all, and all are thin. Those who must guard others are few; those who make others guard them are many. Knowing the place and day of battle allows forces to unite from a thousand li; ignorance leaves wings unable to support each other, front unable to aid rear. How much less can they reinforce across tens of li? Thus, even though Yue’s troops are many, what advantage have they? Victory can be manufactured; the enemy may be numerous yet made unable to fight.
+
+Calculate their plans to know advantage and loss; observe their signals to know movement and stillness; shape their forces to know ground of life and death; test them to know surplus and shortage. The pinnacle of formation is formlessness: spies cannot discover it, the wise cannot plan against it. You present a recognizable image of victory, yet the method by which you impose victory remains hidden. Victories do not repeat; responses adapt without end. Warfare resembles water: water avoids heights and flows downward; armies avoid strength and strike weakness. Water shapes itself to terrain; armies shape victory to the enemy. There is no constant momentum, no constant form. One who adapts to the enemy’s changes and seizes victory is called divine, just as no element, season, day or moon holds permanent dominance.}
+
+\chapterentry{第7篇 軍爭}{Maneuvering}{%
+孫子曰： 凡用兵之法，將受命於君，合軍聚眾，交和而舍，莫難於軍爭。軍爭之難者，以迂為直，以患為利。故迂其途，而誘之以利，後人發，先人至，此知迂直之計者也。軍爭為利，軍爭為危。舉軍而爭利則不及，委軍而爭利則輜重捐。是故捲甲而趨，日夜不處，倍道兼行，百裡而爭利，則擒三將軍，勁者先，疲者後，其法十一而至；五十裏而爭利，則蹶上將軍，其法半至；三十裏而爭利，則三分之二至。是故軍無輜重則亡，無糧食則亡，無委積則亡。故不知諸侯之謀者，不能豫交；不知山林、險阻、沮澤之形者，不能行軍；不用鄉導者，不能得地利。故兵以詐立，以利動，以分和為變者也。故其疾如風，其徐如林，侵掠如火，不動如山，難知如陰，動如雷震。掠鄉分眾，廓地分利，懸權而動。先知迂直之計者勝，此軍爭之法也。《軍政》曰：“言不相聞，故為之金鼓；視不相見，故為之旌旗。”夫金鼓旌旗者，所以一民之耳目也。民既專一，則勇者不得獨進，怯者不得獨退，此用眾之法也。故夜戰多金鼓，晝戰多旌旗，所以變人之耳目也。三軍可奪氣，將軍可奪心。是故朝氣銳，晝氣惰，暮氣歸。善用兵者，避其銳氣，擊其惰歸，此治氣者也。以治待亂，以靜待嘩，此治心者也。以近待遠，以佚待勞，以飽待饑，此治力者也。無邀正正之旗，無擊堂堂之陳，此治變者也。故用兵之法，高陵勿向，背丘勿逆，佯北勿從，銳卒勿攻，餌兵勿食，歸師勿遏，圍師遺闕，窮寇勿迫，此用兵之法也。}{%
+After receiving orders and concentrating the army, nothing is harder than maneuvering for advantage. Its difficulty lies in turning the indirect into the direct and misfortune into opportunity. Wind the route yet lure with profit; depart later yet arrive first—such is mastery of indirect and direct paths. Maneuvering brings both benefit and danger: move the whole army and you arrive too late; dispatch a light column and you abandon supplies. Forced marches in armor day and night, doubling the pace to seize gain over a hundred li, cause a third of the troops to fall out. At fifty li half arrive; at thirty li two-thirds. An army without baggage perishes; without food it perishes; without reserves it perishes.
+
+Therefore understand the plans of neighboring lords or you cannot forge alliances. Know mountains, forests, ravines and marshes or you cannot march. Employ local guides or you cannot seize advantage. War stands upon deception, moves through advantage and transforms by division and concentration. Move like the wind, stand like the forest, raid like fire, hold fast like the mountain, be inscrutable like shadow, strike like thunder. Plunder the countryside by dispersing troops, occupy territory by dividing and guarding it, weigh the situation before moving. Those who know the interplay of indirect and direct in advance win—this is the doctrine of maneuvering.
+
+Regulations say: since words cannot be heard, use drums and bells; since sights cannot be seen, use banners. These unify the people’s eyes and ears so the brave cannot advance alone nor the timid retreat alone. Thus night battles use many drums, day battles many banners to change perceptions. The spirit of an army can be taken, the mind of a general seized. Morning energy is sharp, midday energy slack, evening energy homesick. Avoid their sharpness, strike their weariness—this governs qi. Meet disorder with order and restlessness with calm—this governs the mind. Meet distance with proximity, fatigue with rest, hunger with fullness—this governs strength. Do not engage well-ordered banners nor attack solid formations—this governs adaptability.
+
+Therefore: do not face the enemy on high ground, do not oppose him when he descends; do not pursue feigned retreats; do not attack crack troops; do not swallow baited detachments; do not cut off returning soldiers; leave an outlet for a surrounded enemy; do not press a desperate foe. Such are the rules for employing troops.}
+
+\chapterentry{第8篇 九變}{Nine Adaptations}{%
+孫子曰： 凡用兵之法，將受命於君，合軍聚合。泛地無舍，衢地合交，絕地無留，圍地則謀，死地則戰，途有所不由，軍有所不擊，城有所不攻，地有所不爭，君命有所不受。故將通於九變之利者，知用兵矣；將不通九變之利，雖知地形，不能得地之利矣；治兵不知九變之術，雖知五利，不能得人之用矣。是故智者之慮，必雜於利害，雜於利而務可信也，雜於害而患可解也。是故屈諸侯者以害，役諸侯者以業，趨諸侯者以利。故用兵之法，無恃其不來，恃吾有以待之；無恃其不攻，恃吾有所不可攻也。故將有五危，必死可殺，必生可虜，忿速可侮，廉潔可辱，愛民可煩。凡此五者，將之過也，用兵之災也。覆軍殺將，必以五危，不可不察也。}{%
+A general who has received orders and gathered the army must adjust to circumstances. Do not encamp on open ground; unite with allies on critical crossroads; do not linger on isolated ground; devise stratagems on encircled ground; fight to the death on desperate ground. There are roads not to follow, armies not to strike, cities not to assault, land not to contest and orders not to obey. Only a commander versed in the nine adaptations knows how to employ troops. Without that mastery, knowledge of terrain is useless and discipline cannot secure loyalty.
+
+Wise plans blend advantage with danger. When advantage is mixed in, trust can be gained; when danger is considered, troubles can be resolved. Subdue other lords by threatening harm, employ them by assigning tasks, win them by offering profit. Never rely on the enemy’s failure to come; rely on being ready for him. Never rely on his failure to attack; rely on making yourself unassailable.
+
+Beware five dangerous faults in generals: reckless death leads to destruction; cowardly desire to live leads to capture; hot temper invites insult; punctilious honor invites disgrace; excessive compassion breeds turmoil. These five bring disaster; they ruin armies and kill generals, so they must be examined closely.}
+
+\chapterentry{第9篇 行軍}{On the March}{%
+孫子曰：凡處軍相敵，絕山依穀，視生處高，戰隆無登，此處山之軍也。絕水必遠水，客絕水而來，勿迎之於水內，令半渡而擊之利，欲戰者，無附於水而迎客，視生處高，無迎水流，此處水上之軍也。絕斥澤，唯亟去無留，若交軍於斥澤之中，必依水草而背眾樹，此處斥澤之軍也。平陸處易，右背高，前死後生，此處平陸之軍也。凡此四軍之利，黃帝之所以勝四帝也。凡軍好高而惡下，貴陽而賤陰，養生而處實，軍無百疾，是謂必勝。丘陵堤防，必處其陽而右背之，此兵之利，地之助也。上雨水流至，欲涉者，待其定也。凡地有絕澗、天井、天牢、天羅、天陷、天隙，必亟去之，勿近也。吾遠之，敵近之；吾迎之，敵背之。軍旁有險阻、潢井、蒹葭、小林、蘙薈者，必謹覆索之，此伏姦之所處也。敵近而靜者，恃其險也；遠而挑戰者，欲人之進也；其所居易者，利也；眾樹動者，來也；眾草多障者，疑也；鳥起者，伏也；獸駭者，覆也；塵高而銳者，車來也；卑而廣者，徒來也；散而條達者，樵採也；少而往來者，營軍也；辭卑而備者，進也；辭強而進驅者，退也；輕車先出居其側者，陳也；無約而請和者，謀也；奔走而陳兵者，期也；半進半退者，誘也；杖而立者，饑也；汲而先飲者，渴也；見利而不進者，勞也；鳥集者，虛也；夜呼者，恐也；軍擾者，將不重也；旌旗動者，亂也；吏怒者，倦也；殺馬肉食者，軍無糧也；懸甀不返其舍者，窮寇也；諄諄翕翕，徐與人言者，失眾也；數賞者，窘也；數罰者，困也；先暴而後畏其眾者，不精之至也；來委謝者，欲休息也。兵怒而相迎，久而不合，又不相去，必謹察之。兵非貴益多也，惟無武進，足以並力料敵取人而已。夫惟無慮而易敵者，必擒於人。卒未親而罰之，則不服，不服則難用。卒已親附而罰不行，則不可用。故合之以文，齊之以武，是謂必取。令素行以教其民，則民服；令素不行以教其民，則民不服。令素行者，與眾相得也。}{%
+When positioning against an enemy: in mountains, keep to valleys, camp on sunny heights and do not climb to attack uphill. At rivers, stay away from the banks; let the enemy begin crossing and strike when half his force is across. Do not fight with water at your back. In marshes, pass quickly; if forced to fight there, stand amid reeds with trees behind you. On level ground choose firm, elevated positions with death ground to the front and life ground behind. These were the advantages by which the Yellow Emperor defeated four rulers.
+
+Armies prefer heights and sunlight, avoid low and damp ground, and thrive where supplies abound. Occupy the sunny side of hills and have natural barriers at your back. When rain swells streams, wait until they settle before crossing. Steer clear of ravines, pits, trap-like hollows and clefts. If we avoid them yet the enemy approaches, or if we meet them while the enemy faces away, the advantage is ours. Search thoroughly any ground with gullies, pools, reeds, thickets or dense growth, for these hide ambushers.
+
+Interpret signs: if the enemy approaches quietly, he trusts his terrain; if he calls from afar, he tempts you forward; if he camps on easy ground, he seeks advantage. Stirring trees indicate movement; tall dust clouds mean chariots; low, wide dust means infantry; scattered dust shows wood gatherers; small columns coming and going indicate camp building. Humble speech with preparations means advance; fierce speech and pressing forward means retreat. Light chariots positioning on the flanks signal battle formation. Unsolicited requests for peace hide plots. Troops running to form ranks signal a deadline. Half advance, half retreat—an ambush. Leaning on weapons indicates hunger; first to fetch water and drink indicate thirst. Seeing advantage yet not advancing shows fatigue. Birds settling on a camp reveals emptiness. Nighttime shouting indicates fear. Disorder among troops shows the general lacks authority. Moving banners signal confusion; angry officers signal exhaustion. Slaughtering horses for meat means no grain. Hanging kettles without returning to quarters means desperation. Whispering and murmuring show loss of trust. Frequent rewards reveal distress; frequent punishments reveal hardship. Those who first rage and then fear their soldiers seriously lack skill. Envoys who sue for peace without conditions seek rest.
+
+When enemies face you angrily yet neither engage nor withdraw, watch carefully. Victory does not require larger numbers, only avoiding reckless charges while concentrating force and seizing opportunity. Those who underestimate the enemy without planning are captured. Punish troops before they feel attached and they will not obey; if they are attached and you fail to enforce discipline, they become useless. Unite them with civil guidance and regulate them with martial law—that is certain control. When orders are practiced beforehand the people submit; when they are not, they will not. Discipline must be habitual to resonate with the ranks.}
+
+\chapterentry{第10篇 地形}{Terrain}{%
+孫子曰：地形有通者、有掛者、有支者、有隘者、有險者、有遠者。我可以往，彼可以來，曰通。通形者，先居高陽，利糧道，以戰則利。可以往，難以返，曰掛。掛形者，敵無備，出而勝之，敵若有備，出而不勝，難以返，不利。我出而不利，彼出而不利，曰支。支形者，敵雖利我，我無出也，引而去之，令敵半出而擊之利。隘形者，我先居之，必盈之以待敵。若敵先居之，盈而勿從，不盈而從之。險形者，我先居之，必居高陽以待敵；若敵先居之，引而去之，勿從也。遠形者，勢均難以挑戰，戰而不利。凡此六者，地之道也，將之至任，不可不察也。凡兵有走者、有馳者、有陷者、有崩者、有亂者、有北者。凡此六者，非天地之災，將之過也。夫勢均，以一擊十，曰走；卒強吏弱，曰馳；吏強卒弱，曰陷；大吏怒而不服，遇敵懟而自戰，將不知其能，曰崩；將弱不嚴，教道不明，吏卒無常，陳兵縱橫，曰亂；將不能料敵，以少合眾，以弱擊強，兵無選鋒，曰北。凡此六者，敗之道也，將之至任，不可不察也。夫地形者，兵之助也。料敵制勝，計險隘遠近，上將之道也。知此而用戰者必勝，不知此而用戰者必敗。故戰道必勝，主曰無戰，必戰可也；戰道不勝，主曰必戰，無戰可也。故進不求名，退不避罪，唯民是保，而利於主，國之寶也。視卒如嬰兒，故可以與之赴深溪；視卒如愛子，故可與之俱死。厚而不能使，愛而不能令，亂而不能治，譬若驕子，不可用也。知吾卒之可以擊，而不知敵之不可擊，勝之半也；知敵之可擊，而不知吾卒之不可以擊，勝之半也；知敵之可擊，知吾卒之可以擊，而不知地形之不可以戰，勝之半也。故知兵者，動而不迷，舉而不窮。故曰：知彼知己，勝乃不殆；知天知地，勝乃可全。}{%
+Terrain comes in six forms. Open ground allows both sides to advance—occupy the high, sunny positions and secure your supply routes. Hanging ground is easy to enter but hard to leave—if the enemy is unprepared attack; if prepared, avoid it lest you be trapped. Intersecting ground benefits both sides—remain still and strike the enemy when he emerges halfway. Narrow ground must be seized first and filled with troops; if the enemy holds it and is prepared, do not attack; if unprepared, strike at once. Precipitous ground should be occupied first on the sunny heights; if the enemy arrives first, withdraw. Distant ground, where strength is equal but marching arduous, should not be forced to battle. These six matters are the general’s responsibility; he must scrutinize them.
+
+Armies fail in six ways: rout, disorderly flight, collapse, disintegration, chaos and defeat. These are not acts of fate but the general’s errors. When strength is equal yet a small force attacks a large, it is rout. When soldiers are strong but officers weak, the army bolts; when officers are strong but soldiers weak, the ranks sink. When senior officers rage and fight on their own, ignorant of their commander’s plan, the army crumbles. When the commander is weak, discipline lax and instruction unclear, formations chaotic, the army is disordered. When he misjudges the enemy, engages the many with the few, the strong with the weak, and lacks elite troops, he is defeated. These six lead to ruin and must be studied.
+
+Terrain assists the army. Estimating the enemy, seizing victory, calculating danger, constriction, distance—these are the arts of a superior general. If the Way to victory is certain and the ruler forbids battle, you must still fight. If victory is impossible and the ruler insists on battle, you must refuse. Advance without seeking fame, retreat without fearing blame; care only for protecting the people and aligning benefit with the ruler—that is the treasure of the state.
+
+Treat soldiers like infants and they will follow you into the deepest ravine; treat them like beloved sons and they will die with you. But if you indulge without discipline, love without commanding, fail to govern—like indulged children—they are useless. Knowing your troops can strike yet not whether the enemy can be struck wins only half. Knowing the enemy can be struck yet not whether your troops can strike wins only half. Knowing both yet not grasping whether terrain permits battle wins only half. Those who understand war move without confusion and act without exhaustion. Thus: know the enemy and know yourself and victory will not be imperiled; know Heaven and Earth and victory will be complete.}
+
+\chapterentry{第11篇 九地}{Nine Grounds}{%
+孫子曰：用兵之法，有散地，有輕地，有爭地，有交地，有衢地，有重地，有泛地，有圍地，有死地。諸侯自戰其地者，為散地；入人之地不深者，為輕地；我得亦利，彼得亦利者，為爭地；我可以往，彼可以來者，為交地；諸侯之地三屬，先至而得天下眾者，為衢地；入人之地深，背城邑多者，為重地；山林、險阻、沮澤，凡難行之道者，為泛地；所由入者隘，所從歸者迂，彼寡可以擊吾之眾者，為圍地；疾戰則存，不疾戰則亡者，為死地。是故散地則無戰，輕地則無止，爭地則無攻，交地則無絕，衢地則合交，重地則掠，泛地則行，圍地則謀，死地則戰。古之善用兵者，能使敵人前後不相及，眾寡不相恃，貴賤不相救，上下不相收，卒離而不集，兵合而不齊。合於利而動，不合於利而止。敢問敵眾而整將來，待之若何曰：先奪其所愛則聽矣。兵之情主速，乘人之不及。由不虞之道，攻其所不戒也。凡為客之道，深入則專。主人不克，掠於饒野，三軍足食。謹養而勿勞，並氣積力，運兵計謀，為不可測。投之無所往，死且不北。死焉不得，士人盡力。兵士甚陷則不懼，無所往則固，深入則拘，不得已則鬥。是故其兵不修而戒，不求而得，不約而親，不令而信，禁祥去疑，至死無所之。吾士無餘財，非惡貨也；無餘命，非惡壽也。令發之日，士卒坐者涕沾襟，偃臥者涕交頤，投之無所往，諸、劌之勇也。故善用兵者，譬如率然。率然者，常山之蛇也。擊其首則尾至，擊其尾則首至，擊其中則首尾俱至。敢問兵可使如率然乎？曰可。夫吳人與越人相惡也，當其同舟而濟而遇風，其相救也如左右手。是故方馬埋輪，未足恃也；齊勇如一，政之道也；剛柔皆得，地之理也。故善用兵者，攜手若使一人，不得已也。將軍之事，靜以幽，正以治，能愚士卒之耳目，使之無知；易其事，革其謀，使人無識；易其居，迂其途，使民不得慮。帥與之期，如登高而去其梯；帥與之深入諸侯之地，而發其機。若驅群羊，驅而往，驅而來，莫知所之。聚三軍之眾，投之於險，此謂將軍之事也。九地之變，屈伸之力，人情之理，不可不察也。凡為客之道，深則專，淺則散。去國越境而師者，絕地也；四徹者，衢地也；入深者，重地也；入淺者，輕地也；背固前隘者，圍地也；無所往者，死地也。是故散地吾將一其志，輕地吾將使之屬，爭地吾將趨其後，交地吾將謹其守，衢地吾將固其結，重地吾將繼其食，泛地吾將進其途，圍地吾將塞其闕，死地吾將示之以不活。故兵之情：圍則禦，不得已則鬥，過則從。是故不知諸侯之謀者，不能預交；不知山林、險阻、沮澤之形者，不能行軍；不用鄉導，不能得地利。四五者，一不知，非霸王之兵也。夫霸王之兵，伐大國，則其眾不得聚；威加於敵，則其交不得合。是故不爭天下之交，不養天下之權，信己之私，威加於敵，則其城可拔，其國可隳。施無法之賞，懸無政之令。犯三軍之眾，若使一人。犯之以事，勿告以言；犯之以害，勿告以利。投之亡地然後存，陷之死地然後生。夫眾陷於害，然後能為勝敗。故為兵之事，在順詳敵之意，並敵一向，千里殺將，是謂巧能成事。是故政舉之日，夷關折符，無通其使，厲於廊廟之上，以誅其事。敵人開闔，必亟入之，先其所愛，微與之期，踐墨隨敵，以決戰事。是故始如處女，敵人開戶；後如脫兔，敵不及拒。}{%
+Warfare recognizes nine types of ground. Dispersive ground is your own territory; do not fight there. Light ground is shallow penetration; do not halt on it. Contentious ground benefits both sides; do not attack directly. Intersecting ground allows both sides to come and go; do not sever alliances. Focal ground touches multiple lords; forge alliances quickly. Heavy ground is deep penetration with cities at your back; plunder it. Difficult ground comprises mountains, forests, defiles and marshes; keep moving. Encircled ground constricts entry and exit; devise stratagems. Death ground leaves no escape; fight to the death.
+
+Ancient masters shattered cohesion—front and rear could not aid each other, nobles and commoners could not help one another, officers and soldiers could not coordinate. They moved only when advantageous and stopped when it was not. Asked how to treat an enemy that arrives numerous and orderly, they answered: seize what he loves and he will heed you. Speed is the essence of war: take advantage of his lack of preparation, travel unanticipated routes and strike where he is unguarded.
+
+For armies operating as guests in enemy territory: go deep to unify resolve; the host cannot beat you. Plunder rich fields so the three armies have food. Nurture the troops without exhausting them; combine their qi and accumulate strength; move with plans none can predict. Throw them where there is no escape and they will not flee; when there is no survival outside victory, every soldier exerts his utmost. When troops fall into peril they shed fear; when there is nowhere to go they stand firm; when penetration is deep they feel bound; when there is no choice they fight.
+
+Thus their discipline becomes instinctive without training; loyalty arises without bargaining; intimacy forms without binding; trust exists without orders. Ban omens, remove doubts and they will go to death without hesitation. Our soldiers hoard no extra wealth, not because they dislike riches; they hoard no extra life, not because they disdain longevity. On the day orders issue, some sit and weep, others lie down and tears soak their cheeks; cast them where there is no escape and they show the courage of legendary warriors.
+
+The skilled commander likens his army to the shuanran serpent of Mount Chang: strike the head and the tail attacks; strike the tail and the head attacks; strike the middle and both ends attack together. Can troops be made like that? They can. The people of Wu and Yue hate each other, yet if they share a boat in a storm they help each other like left and right hands. Therefore binding chariots together and burying wheels is insufficient; unity of spirit is the way of governance, and balancing hard and soft the logic of terrain. The master commander leads as if guiding a single person because circumstances leave no alternative.
+
+The general must be calm and inscrutable, upright and orderly. He can dull his soldiers’ eyes and ears so they know nothing; change his plans and alter his strategies so none can anticipate; change camps and take circuitous routes so none can scheme. He sets agreements yet removes the ladder, leading them deep into enemy territory and then springing the snare, driving them like a herd of sheep so none know where they go. Concentrate the three armies and cast them into peril—this is the general’s task. He must study the transformations of the nine grounds, the power to expand or contract, the logic of human feelings.
+
+As a guest: deep penetration unifies; shallow penetration scatters. Crossing borders into hostile country is isolated ground; passing through multiple roads is focal ground; going deep is heavy ground; shallow is light; backed by strength with constricted front is encircled; having nowhere to go is death ground. Therefore, on dispersive ground unify their purpose; on light ground keep them cohesive; on contentious ground hurry them; on intersecting ground guard alliances; on focal ground secure ties; on heavy ground maintain supplies; on difficult ground push the march; on encircled ground block the openings; on death ground show them there is no life.
+
+So in war: surrounded they resist, pressed they fight, exhausted they submit. Those ignorant of the lords’ plans cannot ally; those ignorant of terrain cannot march; those who do not use guides cannot seize advantage. Ignorance of any of these disqualifies an army of hegemony. An army of hegemony strikes great states so their masses cannot unite and their alliances cannot cohere. It does not compete for universal favor nor cultivate external power; trusting its own plan and imposing its will, it topples cities and nations. It grants rewards outside the law, issues commands beyond precedent, and directs the masses as if they were one.
+
+Impose tasks without explaining, impose danger without promising reward. Throw them into deadly ground and they survive; push them into desperate straits and they live. When people plunge into peril they can turn defeat into victory. Therefore military operations depend on conforming to and probing the enemy’s intent, collapsing his allies into one direction and striking a hundred-li away to slay his general—this is the craft that accomplishes great deeds. When mobilization is announced, close the passes and destroy credentials; allow no envoys through. Intensify oversight at court to uncover their schemes. When the enemy opens or closes, enter swiftly; seize what he loves; appoint covert deadlines; shadow his movements and decide the issue. At first be like a maiden so the enemy opens the door; later be like a fleeing hare so he cannot stop you.}
+
+\chapterentry{第12篇 火攻}{Attack by Fire}{%
+孫子曰：凡火攻有五：一曰火人，二曰火積，三曰火輜，四曰火庫，五曰火隊。行火必有因，因必素具。發火有時，起火有日。時者，天之燥也。日者，月在箕、壁、翼、軫也。凡此四宿者，風起之日也。凡火攻，必因五火之變而應之：火發於內，則早應之於外；火發而其兵靜者，待而勿攻，極其火力，可從而從之，不可從則止。火可發於外，無待於內，以時發之，火發上風，無攻下風，晝風久，夜風止。凡軍必知五火之變，以數守之。故以火佐攻者明，以水佐攻者強。水可以絕，不可以奪。夫戰勝攻取而不惰其功者凶，命曰“費留”。故曰：明主慮之，良將惰之，非利不動，非得不用，非危不戰。主不可以怒而興師，將不可以慍而攻戰。合於利而動，不合於利而止。怒可以複喜，慍可以複說，亡國不可以複存，死者不可以複生。故明主慎之，良將警之。此安國全軍之道也。}{%
+There are five types of fire attack: burning personnel, stores, equipment, depots and convoys. Fire must have a basis, and the materials prepared beforehand. Igniting fire has proper weather and days: dryness of Heaven and the moon in the mansions of Ji, Bi, Yi or Zhen, which foretell wind. Respond to the five variations of fire: if fire breaks out inside the enemy camp, quickly support it from outside. If fire breaks out and the enemy remains calm, wait; when the flames reach their height, exploit them if you can, otherwise desist. If you can set fire from outside, do so without waiting for inside help; always ignite from upwind and avoid attacking downwind. Day winds last, night winds cease. Armies must master these variations numerically.
+
+Fire brings clarity to attack; water lends strength. Water can sever supplies but not seize them. Those who win yet linger without exploiting advantage court disaster—this is called wasteful delay. Therefore the enlightened ruler deliberates and the good general is cautious: move only when there is benefit, employ troops only when gain exists, fight only when danger threatens. A ruler must not raise armies in anger; a general must not fight in resentment. Act when it accords with advantage; stop when it does not. Anger can be restored to joy and resentment to delight, but a ruined state cannot be rebuilt and the dead cannot return. Hence prudent rulers and vigilant generals secure the nation and preserve the army.}
+
+\chapterentry{第13篇 用間}{Employing Spies}{%
+孫子曰： 凡興師十萬，出征千里，百姓之費，公家之奉，日費千金，內外騷動，怠於道路，不得操事者，七十萬家。相守數年，以爭一日之勝，而愛爵祿百金，不知敵之情者，不仁之至也，非民之將也，非主之佐也，非勝之主也。故明君賢將所以動而勝人，成功出於眾者，先知也。先知者，不可取於鬼神，不可象於事，不可驗於度，必取於人，知敵之情者也。故用間有五：有因間，有內間，有反間，有死間，有生間。五間俱起，莫知其道，是謂神紀，人君之寶也。鄉間者，因其鄉人而用之；內間者，因其官人而用之；反間者，因其敵間而用之；死間者，為誑事於外，令吾聞知之而傳於敵間也；生間者，反報也。故三軍之事，莫親於間，賞莫厚於間，事莫密於間，非聖賢不能用間，非仁義不能使間，非微妙不能得間之實。微哉微哉！無所不用間也。間事未發而先聞者，間與所告者兼死。凡軍之所欲擊，城之所欲攻，人之所欲殺，必先知其守將、左右、謁者、門者、舍人之姓名，令吾間必索知之。敵間之來間我者，因而利之，導而舍之，故反間可得而用也；因是而知之，故鄉間、內間可得而使也；因是而知之，故死間為誑事，可使告敵；因是而知之，故生間可使如期。五間之事，主必知之，知之必在於反間，故反間不可不厚也。昔殷之興也，伊摯在夏；周之興也，呂牙在殷。故明君賢將，能以上智為間者，必成大功。此兵之要，三軍之所恃而動也。}{%
+Raising one hundred thousand troops and sending them a thousand li costs the people and the state a thousand pieces of gold a day, throwing the realm into turmoil and keeping seven hundred thousand families from their work. To contend for a day’s victory after years of campaigning yet begrudge a hundred pieces of gold for intelligence is the height of cruelty. Such a leader is no general of the people, no assistant to the ruler, no master of victory. Enlightened rulers and worthy generals triumph because they know beforehand. Such foreknowledge cannot be obtained from spirits, omens or calculation; it must come from people who know the enemy.
+
+There are five kinds of spies: local, internal, double, expendable and surviving. When they operate together so that none know their methods, it is the divine network, the ruler’s treasure. Local spies are recruited from inhabitants; internal spies from enemy officials; double spies from captured enemy agents; expendable spies spread false information; surviving spies return with reports. Nothing is closer to the army than spies, nothing more richly rewarded, nothing more secret. Only the sagely can use them, only the benevolent can employ them, only the subtle can obtain truth from them. Spycraft is truly marvelous; nothing is beyond its reach. If a mission is revealed prematurely, both the spy and those he told must die.
+
+Whatever the army intends to strike, the city to besiege, the person to kill—you must first know the names of their commanders, aides, gatekeepers and attendants. Ensure that your spies obtain them. When enemy spies come to spy on us, bribe and lodge them so they become double agents. Through them you can control local and internal spies; through them you can direct expendable spies; through them you can schedule surviving spies. The ruler must know the work of all five spies, and such knowledge depends on the double agent, so reward him generously.
+
+When Yin rose, Yi Zhi served within Xia; when Zhou rose, Lü Ya served within Yin. Enlightened rulers and worthy generals achieve great deeds because they enlist the wisest as agents. Intelligence is the essence of warfare; the three armies move because of it.}
+
+\end{document}
